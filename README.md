@@ -1,8 +1,10 @@
 # Exemplo
 
 ```php
-// Transforma o XML da NF-e em um array 
-$nfeXML = new NFeXML('webroot/import/uploads/' . $file->name());
+/**
+* Faz a leitura do XML e o transforma em um array.
+*/
+$nfeXML = new NFeXML('diretorio/onde/esta/o/xml/' . $file->name());
 
 /** 
 * Transforma as informações do XML em um Objeto, lendo as informações conforme o modelo de NF-e 3.10.
